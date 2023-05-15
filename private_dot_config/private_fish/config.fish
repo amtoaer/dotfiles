@@ -3,3 +3,4 @@ if status is-interactive
     oh-my-posh init fish --config /usr/share/oh-my-posh/themes/emodipt-extend.omp.json | source
     zoxide init fish | source
 end
+fish_add_path /home/amtoaer/.spicetify
