@@ -5,3 +5,5 @@
 	name = amtoaer
 [credential]
 	helper = store
+[core]
+	excludesFile = ~/.gitignore
