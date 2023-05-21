@@ -7,3 +7,5 @@
 	helper = store
 [core]
 	excludesFile = ~/.gitignore
+[http]
+	postBuffer = 157286400
