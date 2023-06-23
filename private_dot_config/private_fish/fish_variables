@@ -1,6 +1,7 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR --export EDITOR:/usr/bin/vim
+SETUVAR --export GOLEETCODE:/Users/amtoaer/Documents/code/go/go\x2dleetcode/
 SETUVAR --export HOMEBREW_NO_ENV_HINTS:true
 SETUVAR --export PIPENV_VERBOSITY:\x2d1
 SETUVAR __fish_initialized:3400
