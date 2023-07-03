@@ -1,3 +1,4 @@
 function sudo --description 'alias sudo=sudo -E'
- command sudo -E $argv; 
+ command sudo -E $argv
+        
 end
