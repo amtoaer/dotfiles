@@ -4,8 +4,8 @@ if status is-interactive
     oh-my-posh init fish --config /usr/share/oh-my-posh/themes/emodipt-extend.omp.json | source
     {{ else if eq .chezmoi.os "darwin" -}}
     oh-my-posh init fish --config /opt/homebrew/opt/oh-my-posh/themes/emodipt-extend.omp.json | source
+    test -e /Users/amtoaer/.iterm2_shell_integration.fish ; and source /Users/amtoaer/.iterm2_shell_integration.fish ; or true
     {{end -}}
     zoxide init fish | source
     pyenv init - | source
 end
-fish_add_path /home/amtoaer/.spicetify
