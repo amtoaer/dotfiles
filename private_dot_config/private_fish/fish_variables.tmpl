@@ -200,7 +200,7 @@ SETUVAR sponge_purge_only_on_exit:true
 SETUVAR sponge_regex_patterns:\x1d
 SETUVAR sponge_successful_exit_codes:0
 SETUVAR --export PYENV_ROOT:{{ .chezmoi.homeDir }}/\x2epyenv
-SETUVAR --export GOLEETCODE:{{ .chezmoi.homeDir }}/Documents/code/go\x2dleetcode/
+SETUVAR --export GOLEETCODE:{{ .chezmoi.homeDir }}/Documents/code/go/go\x2dleetcode/
 {{ if eq .chezmoi.os "linux" -}}
 SETUVAR fish_user_paths:/home/amtoaer/\x2epyenv/bin\x1e/home/amtoaer/\x2ecargo/bin\x1e/home/amtoaer/\x2eyarn/bin\x1e/home/amtoaer/\x2espicetify\x1e/home/amtoaer/\x2elocal/bin
 {{ else if eq .chezmoi.os "darwin" -}}
