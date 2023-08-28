@@ -6,6 +6,9 @@ if status is-interactive
     oh-my-posh init fish --config /opt/homebrew/opt/oh-my-posh/themes/emodipt-extend.omp.json | source
     test -e /Users/amtoaer/.iterm2_shell_integration.fish ; and source /Users/amtoaer/.iterm2_shell_integration.fish ; or true
     {{end -}}
+    {{ if eq .chezmoi.hostname "NAS" -}}
+    fan2go completion fish | source
+    {{end -}}
     zoxide init fish | source
     pyenv init - | source
 end
