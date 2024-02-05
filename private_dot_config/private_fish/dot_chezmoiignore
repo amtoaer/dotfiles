@@ -1,3 +1,0 @@
-{{ if ne .chezmoi.os "linux" -}}
-functions/jctl.fish
-{{ end -}}

@@ -1,1 +1,4 @@
 chezmoi_key.age
+{{ if ne .chezmoi.os "linux" -}}
+**/jctl.fish
+{{ end -}}
