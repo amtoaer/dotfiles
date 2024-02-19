@@ -7,5 +7,14 @@
 	helper = store
 [core]
 	excludesFile = ~/.gitignore
+	pager = delta
 [http]
 	postBuffer = 157286400
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true
+[merge]
+	conflictstyle = diff3
+[diff]
+	colorMoved = default
