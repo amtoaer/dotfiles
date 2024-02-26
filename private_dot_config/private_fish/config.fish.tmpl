@@ -1,9 +1,6 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
-    {{ if eq .chezmoi.os "linux" -}}
-    oh-my-posh init fish --config /usr/share/oh-my-posh/themes/emodipt-extend.omp.json | source
-    {{ else if eq .chezmoi.os "darwin" -}}
-    oh-my-posh init fish --config /opt/homebrew/opt/oh-my-posh/themes/emodipt-extend.omp.json | source
+    {{ if eq .chezmoi.os "darwin" -}}
     test -e /Users/amtoaer/.iterm2_shell_integration.fish ; and source /Users/amtoaer/.iterm2_shell_integration.fish ; or true
     {{end -}}
     {{ if eq .chezmoi.hostname "NAS" -}}
@@ -12,5 +9,6 @@ if status is-interactive
     zoxide init fish | source
     atuin init fish | source
     pyenv init - | source
+    starship init fish | source
     jj util completion fish | source
 end
