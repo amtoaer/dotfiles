@@ -20,7 +20,7 @@ return {
     opts = {
       ensure_installed = {
         "lua-language-server", "stylua",
-        "pyright"
+        "pyright", "rust-analyzer"
       },
     },
   },
@@ -30,7 +30,7 @@ return {
     opts = {
       ensure_installed = {
         "vim", "lua", "vimdoc",
-        "python"
+        "python", "rust"
       },
     },
   },
