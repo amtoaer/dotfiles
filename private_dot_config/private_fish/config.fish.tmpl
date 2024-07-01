@@ -1,17 +1,13 @@
 if status is-interactive
-    # Commands to run in interactive sessions can go here
-    {{ if eq .chezmoi.os "darwin" -}}
-    test -e /Users/amtoaer/.iterm2_shell_integration.fish ; and source /Users/amtoaer/.iterm2_shell_integration.fish ; or true
-    {{end -}}
+    starship init fish --print-full-init | source
     {{ if eq .chezmoi.hostname "NAS" -}}
     fan2go completion fish | source
     {{end -}}
     zoxide init fish | source
     atuin init fish | source
     pyenv init - | source
-    starship init fish --print-full-init | source
-    if string match -q "$TERM_PROGRAM" "vscode"
-        set -e VSCODE_SHELL_INTEGRATION
-        . (code --locate-shell-integration-path fish)
-    end
+    {{ if eq .chezmoi.os "darwin" -}}
+    test -e /Users/amtoaer/.iterm2_shell_integration.fish; and source /Users/amtoaer/.iterm2_shell_integration.fish; or true
+    {{end -}}
+    string match -q "$TERM_PROGRAM" vscode; and . (code --locate-shell-integration-path fish); or true
 end
