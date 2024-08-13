@@ -7,8 +7,8 @@ $git_state\
 $git_status\
 $cmd_duration\
 $line_break\
+$python\
 $character"""
-command_timeout = 3600000
 
 [directory]
 style = "blue"
@@ -40,6 +40,10 @@ style = "bright-black"
 [cmd_duration]
 format = "[$duration]($style) "
 style = "yellow"
+
+[python]
+format = "[$virtualenv]($style) "
+style = "bright-black"
 
 [hostname]
 ssh_only = true
