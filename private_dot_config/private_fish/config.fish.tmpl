@@ -5,7 +5,6 @@ if status is-interactive
     {{end -}}
     zoxide init fish | source
     atuin init fish | source
-    pyenv init - | source
     {{ if eq .chezmoi.os "darwin" -}}
     test -e /Users/amtoaer/.iterm2_shell_integration.fish; and source /Users/amtoaer/.iterm2_shell_integration.fish; or true
     {{end -}}
