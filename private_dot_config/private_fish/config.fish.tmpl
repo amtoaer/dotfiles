@@ -1,5 +1,4 @@
 if status is-interactive
-    starship init fish --print-full-init | source
     {{ if eq .chezmoi.hostname "NAS" -}}
     fan2go completion fish | source
     {{end -}}
