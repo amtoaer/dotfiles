@@ -7,5 +7,4 @@ if status is-interactive
     {{ if eq .chezmoi.os "darwin" -}}
     test -e /Users/amtoaer/.iterm2_shell_integration.fish; and source /Users/amtoaer/.iterm2_shell_integration.fish; or true
     {{end -}}
-    string match -q "$TERM_PROGRAM" vscode; and . (code --locate-shell-integration-path fish); or true
 end
