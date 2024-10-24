@@ -1,6 +1,3 @@
-# import = ["~/.config/alacritty/catppuccin/catppuccin-frappe.toml"]
-live_config_reload = true
-
 [colors.primary]
 background = "#1f2430"
 foreground = "#cbccc6"
@@ -48,3 +45,6 @@ size = 13.4
 
 [cursor]
 style = { shape = "Beam", blinking = "On" }
+
+[general]
+live_config_reload = true
