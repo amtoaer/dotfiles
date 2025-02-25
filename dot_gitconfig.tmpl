@@ -3,6 +3,7 @@
 [user]
 	email = amtoaer@gmail.com
 	name = amtoaer
+	signingKey = {{ .chezmoi.homeDir }}/.ssh/home.pub
 [credential]
 	helper = store
 [core]
@@ -22,3 +23,9 @@
 	colorMoved = default
 [feature]
 	manyFiles = true
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+[tag]
+	gpgSign = true

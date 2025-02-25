@@ -30,7 +30,7 @@ selection-invert-fg-bg = true
 # 指针设置
 cursor-style = "bar"
 cursor-style-blink = true
-scrollback-limit = 100000
+scrollback-limit = 10000000
 
 # 窗口设置
 window-height = 35
