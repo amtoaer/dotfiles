@@ -1,10 +1,9 @@
 # 字体设置
-font-family = "ZedMono NFM Extd"
+font-family = "Maple Mono NF CN"
 font-size = 13.4
 font-style-bold = "Medium"
 font-style-bold-italic = "Medium Italic"
 font-thicken = true
-adjust-cell-width = -5%
 
 # 主题色配置
 palette = 0=#212733
