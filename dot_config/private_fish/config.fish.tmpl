@@ -4,4 +4,6 @@ if status is-interactive
     {{end -}}
     zoxide init fish | source
     atuin init fish | source
+    # fish 4.0.6 atuin 绑定不生效的临时解决方案
+    bind up _atuin_bind_up
 end
