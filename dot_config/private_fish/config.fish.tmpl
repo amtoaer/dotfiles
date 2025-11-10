@@ -1,7 +1,0 @@
-if status is-interactive
-    {{ if eq .chezmoi.hostname "NAS" -}}
-    fan2go completion fish | source
-    {{end -}}
-    zoxide init fish | source
-    atuin init fish | source
-end
