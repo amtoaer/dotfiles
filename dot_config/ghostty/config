@@ -6,37 +6,41 @@ font-style-bold-italic = "Medium Italic"
 font-thicken = true
 
 # 主题色配置
-palette = 0=#212733
-palette = 1=#f08778
-palette = 2=#53bf97
-palette = 3=#fdcc60
-palette = 4=#60b8d6
-palette = 5=#ec7171
-palette = 6=#98e6ca
-palette = 7=#fafafa
-palette = 8=#686868
-palette = 9=#f58c7d
-palette = 10=#58c49c
-palette = 11=#ffd165
-palette = 12=#65bddb
-palette = 13=#f17676
-palette = 14=#9debcf
-palette = 15=#ffffff
-background = #1f2430
-foreground = #cbccc6
+background = #272e33
+foreground = #d3c6aa
+selection-background = #414b51
+selection-foreground = #d3c6aa
+cursor-color = #d3c6aa
+cursor-text = #272e33
+palette = 0=#343f44
+palette = 1=#e67e80
+palette = 2=#a7c080
+palette = 3=#dbbc7f
+palette = 4=#7fbbb3
+palette = 5=#d699b6
+palette = 6=#83c092
+palette = 7=#d3c6aa
+palette = 8=#859289
+palette = 9=#e67e80
+palette = 10=#a7c080
+palette = 11=#dbbc7f
+palette = 12=#7fbbb3
+palette = 13=#d699b6
+palette = 14=#83c092
+palette = 15=#d3c6aa
 selection-invert-fg-bg = true
 
 # 指针设置
 cursor-style = "bar"
 cursor-style-blink = true
-scrollback-limit = 10000000000
+scrollback-limit = 1073741824
 
 # 窗口设置
+title = " "
+macos-titlebar-proxy-icon = hidden
+macos-icon = custom
+macos-custom-icon = ~/Documents/icons/ghostty.icns
 window-height = 35
 window-width = 110
 window-padding-x = 20
 window-padding-y = 2,10
-
-# 设置 xterm-256color
-term = "xterm-256color"
-
