@@ -44,3 +44,6 @@ window-height = 35
 window-width = 110
 window-padding-x = 20
 window-padding-y = 2,10
+
+# 环境变量设置
+term = xterm-256color
