@@ -1,18 +1,11 @@
 [source.crates-io]
-replace-with = 'rsproxy-sparse'
+replace-with = 'mirror'
 
-[source.rsproxy]
-registry = "https://rsproxy.cn/crates.io-index"
+[source.mirror]
+registry = "sparse+https://mirrors.bfsu.edu.cn/crates.io-index/"
 
-[source.rsproxy-sparse]
-registry = "sparse+https://rsproxy.cn/index/"
-
-[registries.rsproxy]
-index = "https://rsproxy.cn/crates.io-index"
-
-[build]
-incremental = false
-rustc-wrapper = "{{ template "bin" . }}/sccache"
+[registries.mirror]
+index = "sparse+https://mirrors.bfsu.edu.cn/crates.io-index/"
 
 [profile.dev]
 debug = "line-tables-only"
