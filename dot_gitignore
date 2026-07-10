@@ -4,4 +4,5 @@
 pyrightconfig.json
 .file
 CLAUDE.md
-
+AGENTS.md
+.run
